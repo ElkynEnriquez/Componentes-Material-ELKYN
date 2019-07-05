@@ -72,5 +72,23 @@
             {"name":"PROP_VISIBLE","variable":"visible","type": "Boolean", "default":"true"},
             {"name":"PROP_ESTILO","variable":"estilo","type": "String", "default":""}
         ]
+    },{
+        "className": "ee.BtnIconoFlotante",
+        "displayName": "BtnFloat",
+        "version": "1.0",
+        "source": "Componentes-Material-ELKYN/src/boton-flotante.js",
+        "icon":"",
+        "dimensions":[60,60],
+        "dependencies": [
+            {"src": "../lib/jquery-2.2.4.min.js", "cdn": "https://code.jquery.com/jquery-3.4.1.min.js"},
+            {"src": "../sdk/anwidget.js"}
+        ],
+        "properties":[
+            {"name":"PROP_ETIQUETA","variable":"label","type": "String", "default":"Botón"},
+            {"name":"PROP_ICONO","variable":"icono","type": "String", "default":"favorite"},
+            {"name":"PROP_ENABLED","variable":"disabled","type": "Boolean", "default":"false"},
+            {"name":"PROP_VISIBLE","variable":"visible","type": "Boolean", "default":"true"},
+            {"name":"PROP_ESTILO","variable":"estilo","type": "String", "default":""}
+        ]
     }]
 }
