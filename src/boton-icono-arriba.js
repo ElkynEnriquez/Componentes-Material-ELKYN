@@ -1,18 +1,18 @@
 (function($) {    
 
-    $.anwidget("my.BtnIconoArriba", {
+    $.anwidget("ee.BtnIconoArriba", {
         options: {
 			'visible': true,
 			'disabled': false,
             'position': 'absolute'
         },
 		_props: ["left", "top", "width", "height", "position", "transform-origin", "transform"],
-		_attrs: ["id", "disabled", "clase", "label", "icon"],
+		_attrs: ["id", "disabled", "estilo", "label", "icono"],
 		getCreateOptions: function() {
             return $.extend(this.options, { 'id': "button" + _widgetID++ });
 		},
 		getCreateString: function() {
-			return "<button class='mdc-button mdc-button--" + this._options['clase'] + "' id='" + this._options['id'] + "'> <i class='material-icons mdc-button__icon' aria-hidden='true'>" + this._options['icon'] + "</i><br> <span class='mdc-button__label'>" + this._options['label'] + "</span> </button>";
+			return "<button class='mdc-button mdc-button--" + this._options['estilo'] + "' id='" + this._options['id'] + "'> <i class='material-icons mdc-button__icon' aria-hidden='true'>" + this._options['icono'] + "</i><br> <span class='mdc-button__label'>" + this._options['label'] + "</span> </button>";
 		},			
 		getProperties: function() {
 			return this._props;
