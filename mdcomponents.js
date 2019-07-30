@@ -91,6 +91,23 @@
             {"name":"PROP_ESTILO","variable":"estilo","type": "String", "default":""}
         ]
     },{
+        "className": "ee.BtnTextoPrimary",
+        "displayName": "BtnTxtBoot",
+        "version": "1.0",
+        "source": "Componentes-Material-ELKYN/src/boton-primary.js",
+        "icon":"",
+        "dependencies": [
+            {"src": "../lib/jquery-2.2.4.min.js", "cdn": "https://code.jquery.com/jquery-3.4.1.min.js"},
+            {"src": "../sdk/anwidget.js"}
+        ],
+        "properties":[
+            {"name":"PROP_ETIQUETA","variable":"label","type": "String", "default":"Botón"},
+            {"name":"PROP_ENABLED","variable":"disabled","type": "Boolean", "default":"false"},
+            {"name":"PROP_VISIBLE","variable":"visible","type": "Boolean", "default":"true"},
+            {"name":"PROP_BORDE","variable":"outline","type": "Boolean", "default":"false"},
+            {"name":"PROP_COLOR","variable":"color","type": "String", "default":"primary"}
+        ]
+    },{
         "className": "ee.BtnTextoFlotante",
         "displayName": "BtnTxtFloat",
         "version": "1.0",
